@@ -1,5 +1,5 @@
 require 'logger'
-require 'activeresource'
+require 'active_resource'
 
 require 'twilio_resource/twilio_format'
 require 'twilio_resource/exceptions'
