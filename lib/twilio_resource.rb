@@ -20,8 +20,9 @@ module TwilioResource
 end
 
 require 'twilio_resource/base'
-require 'twilio_resource/account'
-require 'twilio_resource/call'
-require 'twilio_resource/incoming_phone_number'
-require 'twilio_resource/local_incoming_phone_number'
-require 'twilio_resource/toll_free_incoming_phone_number'
+Dir[File.dirname(__FILE__) + "/twilio_resource/*.rb"].each { |file| require(file) }
+# require 'twilio_resource/account'
+# require 'twilio_resource/call'
+# require 'twilio_resource/incoming_phone_number'
+# require 'twilio_resource/local_incoming_phone_number'
+# require 'twilio_resource/toll_free_incoming_phone_number'
